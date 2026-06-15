@@ -1998,73 +1998,444 @@
             }
         }
 
-        .section-pad {
-            padding: 40px 0;
+        /* Enhanced Mobile Responsiveness - More Compact & User-Friendly */
+        @media (max-width: 767.98px) {
+
+            /* Global spacing optimization */
+            .section-pad {
+                padding: 35px 0;
+            }
+
+            .container,
+            .container-fluid {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            /* Hero section - more compact */
+            .hero-content {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .hero-headline {
+                font-size: clamp(1.8rem, 10vw, 2.8rem);
+                margin-bottom: 0.75rem;
+                line-height: 1.1;
+            }
+
+            .hero-tagline {
+                font-size: 0.65rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .hero-sub {
+                font-size: 0.85rem;
+                line-height: 1.5;
+                max-width: 95%;
+                margin: 0 auto 1.25rem;
+            }
+
+            /* Navigation - enhanced mobile experience */
+            #nav-toggle {
+                width: 44px;
+                height: 44px;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .hamburger-line {
+                width: 20px;
+            }
+
+            .offcanvas-nav {
+                width: 280px;
+                right: -280px;
+            }
+
+            .offcanvas-nav a {
+                font-size: 1.1rem;
+                padding: 0.6rem 0;
+            }
+
+            .offcanvas-nav .btn {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            /* Sticky bar - more compact */
+            #sticky-bar {
+                padding: 0.5rem 1rem;
+            }
+
+            #sticky-bar .bar-links a {
+                font-size: 0.7rem;
+                margin-right: 0.75rem;
+            }
+
+            #sticky-bar .bar-cta {
+                font-size: 0.75rem;
+                padding: 0.35rem 0.9rem;
+            }
+
+            /* Buttons - enhanced touch targets */
+            .btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+                border-radius: 6px;
+            }
+
+            .btn-lg {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .btn-sm {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+
+            /* Section titles */
+            .section-title {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+                margin-bottom: 1.25rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 0.75rem;
+            }
+
+            /* Service cards - more compact */
+            .service-card {
+                padding: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .service-icon {
+                font-size: 1.3rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .service-card h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .service-card p {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            /* Why choose section */
+            .why-num {
+                font-size: 1.5rem;
+                min-width: 2.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .why-item {
+                padding: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .why-item h5 {
+                font-size: 0.95rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .why-item p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+
+            /* Value pills - more compact */
+            .value-pill {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.6rem;
+                margin: 0.15rem;
+            }
+
+            /* Pricing cards */
+            .pricing-card {
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .pricing-price {
+                font-size: 2rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .pricing-price span {
+                font-size: 0.9rem;
+            }
+
+            .pricing-feature {
+                font-size: 0.85rem;
+                padding: 0.4rem 0;
+            }
+
+            /* Project cards */
+            .project-card {
+                margin-bottom: 1rem;
+                border-radius: 12px;
+            }
+
+            .project-overlay h4 {
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .project-overlay p {
+                font-size: 0.75rem;
+            }
+
+            /* Filter tabs */
+            .filter-tabs {
+                gap: 0.3rem;
+                margin-bottom: 1rem;
+            }
+
+            .filter-tab {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.75rem;
+                border-radius: 20px;
+            }
+
+            /* Contact form */
+            .contact-form-wrapper {
+                padding: 1.25rem;
+                border-radius: 12px;
+            }
+
+            .form-control {
+                padding: 0.6rem 0.75rem;
+                font-size: 0.9rem;
+                border-radius: 6px;
+            }
+
+            .form-control::placeholder {
+                font-size: 0.85rem;
+            }
+
+            /* Map */
+            #contact-map {
+                height: 200px;
+                border-radius: 12px;
+            }
+
+            /* Testimonials */
+            .testimonial-card {
+                padding: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .testimonial-text {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .testimonial-author {
+                font-size: 0.85rem;
+            }
+
+            /* FAQ */
+            .faq-item {
+                margin-bottom: 0.5rem;
+            }
+
+            .faq-question {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .faq-answer {
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            /* Footer */
+            .footer-section {
+                margin-bottom: 1.5rem;
+            }
+
+            .footer-title {
+                font-size: 1rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .footer-link {
+                font-size: 0.85rem;
+                padding: 0.3rem 0;
+            }
+
+            .footer-brand-title {
+                font-size: 1.3rem;
+            }
+
+            .social-link {
+                width: 2.2rem;
+                height: 2.2rem;
+                font-size: 0.9rem;
+            }
+
+            /* Lightbox */
+            #lightbox {
+                padding: 1rem;
+            }
+
+            #lb-close,
+            #lb-prev,
+            #lb-next {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            /* Back to top */
+            #back-top {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+                bottom: 80px;
+            }
+
+            /* Scroll cue */
+            .scroll-cue {
+                display: none;
+            }
+
+            /* Orbit balls - smaller on mobile */
+            .orb-1 {
+                width: 200px;
+                height: 200px;
+            }
+
+            .orb-2 {
+                width: 150px;
+                height: 150px;
+            }
+
+            /* Process section */
+            .process-step {
+                padding: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .process-number {
+                font-size: 1.2rem;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .process-step h4 {
+                font-size: 1rem;
+            }
+
+            /* Technology icons */
+            .tech-icon {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .tech-name {
+                font-size: 0.75rem;
+            }
+
+            /* Spacing utilities for mobile */
+            .mb-5 {
+                margin-bottom: 1.5rem !important;
+            }
+
+            .mt-5 {
+                margin-top: 1.5rem !important;
+            }
+
+            .py-5 {
+                padding-top: 2rem !important;
+                padding-bottom: 2rem !important;
+            }
+
+            .gap-3 {
+                gap: 0.75rem !important;
+            }
+
+            .gap-4 {
+                gap: 1rem !important;
+            }
         }
 
-        .hero-content {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+        /* Ultra-compact for very small screens (375px and below) */
+        @media (max-width: 375px) {
+            .section-pad {
+                padding: 30px 0;
+            }
+
+            .hero-headline {
+                font-size: clamp(1.5rem, 12vw, 2.2rem);
+            }
+
+            .hero-sub {
+                font-size: 0.8rem;
+            }
+
+            .btn {
+                padding: 0.5rem 0.85rem;
+                font-size: 0.8rem;
+            }
+
+            .service-card {
+                padding: 1rem;
+            }
+
+            .pricing-card {
+                padding: 1.25rem;
+            }
+
+            .offcanvas-nav {
+                width: 260px;
+                right: -260px;
+            }
+
+            #sticky-bar .bar-links a {
+                margin-right: 0.5rem;
+            }
+
+            .testimonial-card {
+                padding: 1rem;
+            }
+
+            .contact-form-wrapper {
+                padding: 1rem;
+            }
         }
 
-        .hero-headline {
-            font-size: clamp(2rem, 12vw, 3.5rem);
-            margin-bottom: 1rem;
-        }
+        /* Landscape mobile optimization */
+        @media (max-width: 767px) and (max-height: 500px) {
+            .section-pad {
+                padding: 25px 0;
+            }
 
-        .hero-sub {
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
+            .hero-content {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
 
-        /* Value pills */
-        .value-pill {
-            font-size: 0.8rem;
-            padding: 0.4rem 0.8rem;
-            margin: 0.25rem;
-        }
+            .hero-headline {
+                margin-bottom: 0.5rem;
+            }
 
-        /* Service cards */
-        .service-card {
-            padding: 1.5rem;
-        }
+            .hero-sub {
+                margin-bottom: 0.75rem;
+            }
 
-        .service-icon {
-            font-size: 1.5rem;
-            width: 3rem;
-            height: 3rem;
-        }
-
-        /* Why choose section */
-        .why-num {
-            font-size: 2rem;
-            min-width: 3rem;
-        }
-
-        .why-item h5 {
-            font-size: 1rem;
-        }
-
-        /* Contact form */
-        .contact-form-wrapper {
-            padding: 1.25rem;
-        }
-
-        /* Map */
-        #contact-map {
-            height: 250px;
-        }
-
-        /* Social links */
-        .social-link {
-            width: 2.5rem;
-            height: 2.5rem;
-            font-size: 1rem;
-        }
-
-        /* Scroll cue */
-        .scroll-cue {
-            display: none;
+            .offcanvas-nav {
+                width: 240px;
+            }
         }
 
         /* Extra Small Mobile (375px to 575px) */
@@ -2470,29 +2841,31 @@
             <div class="row g-4 mb-5">
                 <div class="col-md-6 col-lg-4 reveal delay-1">
                     <div class="project-card">
-                        <img src="https://picsum.photos/600/400?random=21" alt="Luminary Labs rebrand" loading="lazy" />
-                        <span class="project-label">Branding</span>
+                        <img src="https://res.cloudinary.com/dcvijlhmp/image/upload/v1781425356/ChatGPT_Image_Jun_14_2026_01_52_04_PM_z7dbhh.png"
+                            alt="Luminary Labs rebrand" loading="lazy" />
+                        <span class="project-label">Website</span>
                         <div class="project-overlay">
                             <h5 style="color:var(--cornsilk);font-family:var(--font-display);margin-bottom:.3rem;">
-                                Luminary Labs</h5>
+                                New Trends</h5>
                             <p
                                 style="color:var(--bronze);font-size:.8rem;font-family:var(--font-mono);letter-spacing:.1em;">
                                 Complete Brand Overhaul</p>
-                            <a href="#" class="btn btn-bronze btn-sm mt-2">View Case Study</a>
+                            <a href="https://newtrends-ten.vercel.app/" class="btn btn-bronze btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 reveal delay-2">
                     <div class="project-card">
-                        <img src="https://picsum.photos/600/400?random=22" alt="Verdant Studios" loading="lazy" />
+                        <img src="https://res.cloudinary.com/dcvijlhmp/image/upload/v1781427229/ChatGPT_Image_Jun_14_2026_02_23_27_PM_oss2qi.png"
+                            alt="Verdant Studios" loading="lazy" />
                         <span class="project-label">Web Design</span>
                         <div class="project-overlay">
                             <h5 style="color:var(--cornsilk);font-family:var(--font-display);margin-bottom:.3rem;">
-                                Verdant Studios</h5>
+                                Visite Studios</h5>
                             <p
                                 style="color:var(--bronze);font-size:.8rem;font-family:var(--font-mono);letter-spacing:.1em;">
                                 E-commerce Experience</p>
-                            <a href="#" class="btn btn-bronze btn-sm mt-2">View Case Study</a>
+                            <a href="#" class="btn btn-bronze btn-sm mt-2">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -2512,7 +2885,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 reveal delay-1">
                     <div class="project-card">
-                        <img src="https://picsum.photos/600/400?random=24" alt="Stratum Co." loading="lazy" />
+                        <img src="https://picsum.photos/600/400?random=23" alt="Stratum Co." loading="lazy" />
                         <span class="project-label">Development</span>
                         <div class="project-overlay">
                             <h5 style="color:var(--cornsilk);font-family:var(--font-display);margin-bottom:.3rem;">
@@ -2706,7 +3079,7 @@
                         <div class="testimonial-author">
                             <img src="https://picsum.photos/100/100?random=61" alt="Amara Solis"
                                 class="testimonial-avatar" loading="lazy" />
-                            <div><strong>Amara Solis</strong><span>CEO, Luminary Labs</span></div>
+                            <div><strong>Diganta Gayen</strong><span>Owner, NewTrends</span></div>
                         </div>
                     </div>
                 </div>
@@ -2721,7 +3094,7 @@
                         <div class="testimonial-author">
                             <img src="https://picsum.photos/100/100?random=62" alt="Kieran Marsh"
                                 class="testimonial-avatar" loading="lazy" />
-                            <div><strong>Kieran Marsh</strong><span>Head of Growth, Opal Ventures</span></div>
+                            <div><strong>Rounak Saha</strong><span>Owner, Visite Studios</span></div>
                         </div>
                     </div>
                 </div>
