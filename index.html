@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="description"
         content="PixelForge — A creative design & development agency crafting purposeful digital experiences. Web Design, UI/UX, Branding, SEO, and Development." />
     <meta name="keywords" content="PixelForge, web design, UI/UX, branding, web development, SEO, digital agency" />
@@ -72,6 +73,50 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            /* Prevent iOS text size adjustment */
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            /* Prevent touch callout and highlighting */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            /* Prevent scrolling bounce effect */
+            overscroll-behavior: none;
+            /* Ensure fixed viewport on mobile */
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        /* Allow text selection for specific elements */
+        input,
+        textarea,
+        .pricing-feature,
+        .testimonial-text,
+        .faq-answer {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+
+        html {
+            /* Prevent viewport scaling */
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Allow text selection for specific elements */
+        input,
+        textarea,
+        .pricing-feature,
+        .testimonial-text,
+        .faq-answer {
+            -webkit-user-select: text;
+            user-select: text;
         }
 
         @media (prefers-reduced-motion: reduce) {
